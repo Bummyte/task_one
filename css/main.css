@@ -43,10 +43,12 @@
     .social-items{
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        width: 8%;
         button{
             background-color: transparent;
             border: none;
-            margin-right: 5px;
+            /* margin-right: 5px; */
             img{
                 height: 18px;
                 width: auto;
@@ -88,9 +90,9 @@
 .backheading {
     position: relative;
     max-width: 100%;
-    height: auto;
+    height: 80vh;
     background-color: black;
-    
+
     /* Add the dark overlay */
     &::before {
         content: "";
@@ -104,7 +106,7 @@
     }
 
     img {
-        height: 400px;
+        height: 80vh;
         width: 100%;
     }
 
@@ -309,7 +311,8 @@
 .gallery-section{
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 80vh;
+    background-color: aqua;
     h1{
         text-align: center;
         margin-top: 3rem;
@@ -329,15 +332,53 @@
         text-align: center;
         margin-bottom: 10px;
     }
-}
-.gallery-container{
+    
+    .gallery-container{
     max-width: 100%;
     height: auto;
     display: block;
+    
     .photo-gallery{
-        
+        height: 70vh;
         float: left;
         margin: 0;
         width: 150px;
     }
+    }
 }
+
+/* .note-container{ 
+  display: block; 
+  img{
+    height: 15px;
+  }
+}*/
+
+.bookcover-container{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 10px;
+    .bookcover-flex{
+        display: flex;       
+        margin: 0 20rem;
+        
+        }
+        .bookcover-flex img:first-child{ 
+            height: 150px;
+            width: 250px;
+        }
+        .bookcover{
+            justify-content: space-between;
+            align-items: center;        
+            padding: 0 5px;
+        }
+        .bookcover-index{
+            position: absolute;
+            top: 20px;
+            left: 0;
+            margin: 0;
+            z-index: 2;
+        }
+}
+
