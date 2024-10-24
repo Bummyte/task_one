@@ -22,7 +22,7 @@
 .header{
     /*border: 2px solid gray;*/
     display: flex;    
-    background-color:whitesmoke;
+    background-color:rgba(255,255,255,255);
     border-radius: 5px;
     justify-content: space-between;
     align-items: center;
@@ -78,7 +78,6 @@
     }
 
     a{
-   
     text-decoration: none;
     text-align: center;
     color: black;
@@ -134,7 +133,7 @@
     margin-top: 5px; 
     align-content: center;
     margin-left: 20%;
-
+    background-color: rgba(255,255,255,255);
     img{
         height: 300px;
         padding: 0;
@@ -153,7 +152,7 @@
     display: block;
     max-width: 100%;
     height: auto;
-    background-color: #f5f3f3;
+    background-color: rgba(245,245,245,255);
     box-sizing: 2px 2px 2px 5px black;
     margin-bottom: 50px;
     padding : 20px 0;
@@ -204,7 +203,7 @@
 
 .blog{
     display: block;
-
+    background-color: rgba(255,255,255,255);
    .blogsect{
     display: flex;
     justify-content: center;
@@ -277,9 +276,10 @@
     height: 2px;
     background-color: grey;
     width: 30%;
+    margin: 0 1rem;
     /* margin-bottom: 10px; */
     
-    }
+}
 
 .line-text{
     display: flex;
@@ -309,76 +309,178 @@
 }
 
 .gallery-section{
-    display: block;
-    max-width: 100%;
-    height: 80vh;
-    background-color: aqua;
-    h1{
-        text-align: center;
-        margin-top: 3rem;
+    background-color: rgba(245,245,245,255);
+    padding: 2rem 0;
+    margin-top: 2rem;
+
+    .heading-links{
+        h1{
+            text-align: center;
+            /* margin-top: 3rem; */
+        }
+        ul{
+            display: flex;
+            font-size: bold;
+            list-style-type: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+        li{ 
+            text-decoration: underline; 
+            margin: 10px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
     }
-    ul{
-        display: flex;
-        font-size: bold;
-        list-style-type: none;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 2rem; 
-        margin-top: 3rem;
-    }
-    li{
-        /* text-decoration: underline; */
-        margin: 10px;
-        text-align: center;
-        margin-bottom: 10px;
-    }
+    
     
     .gallery-container{
     max-width: 100%;
     height: auto;
     display: block;
+
+    .gallery-images{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: red;
+        margin: 0;
+
+    }
     
     .photo-gallery{
-        height: 70vh;
-        float: left;
+        width: 25%;
+        /* float: left; */
         margin: 0;
-        width: 150px;
+        height: 300px;
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        
     }
+    }
+
+    .testimony{
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .img-holder {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+            img {
+            height: 3rem;
+            width: 3rem;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+        
+        }
     }
 }
 
-/* .note-container{ 
-  display: block; 
-  img{
-    height: 15px;
-  }
-}*/
 
 .bookcover-container{
-    display: block;
+    /* display: block; */
     max-width: 100%;
     height: auto;
     margin: 0 10px;
+    background-color: rgba(255,255,255,255) ;
+    padding-bottom: 5rem;
     .bookcover-flex{
         display: flex;       
-        margin: 0 20rem;
+        justify-content: center;
+        align-items: center;
         
+    }
+
+    .bookcover{
+        position: relative;
+        max-width: 100%;
+        margin: 0 1rem;
+
+        /* Add the dark overlay */
+        &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for desired darkness */
+        z-index: 1; /* Ensure the overlay is above the image but below the text */
         }
-        .bookcover-flex img:first-child{ 
-            height: 150px;
+    
+
+    
+        .bkimg-bg img:first-child{ 
+            height: 200px;
             width: 250px;
         }
-        .bookcover{
-            justify-content: space-between;
-            align-items: center;        
-            padding: 0 5px;
-        }
+        
         .bookcover-index{
-            position: absolute;
-            top: 20px;
-            left: 0;
-            margin: 0;
+            position: absolute; 
+            top: 80px;
+            left: 30px;
+            margin: 0; 
             z-index: 2;
+            color: white;
+            /* width: 30%; */
+            margin: 0;
+            z-index: 2; /* Ensure text is above the overlay */
+            
+            .index-flex{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2rem;
+                
+                }
+                p{
+                    font: 0.1rem;
+                    margin: 0 15px;
+                }
+               
+                .index-flex small:first-child{
+                    color: greenyellow;
+                }
+            }
         }
+}
+
+    
+.updates{
+    background-color: black;
+    color: white; 
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    .update-holder{
+       padding-top: 30px;
+       margin: 40px;
+       p{
+        padding: 5px 30px;
+       }
+    }
+    .search-holder{
+       display: flex;
+       margin: 50px;
+       input, button{
+        height: 50px;
+        border-radius: 50%;
+       }
+       button{
+        margin-left: -2rem;
+       }
+    }
+       
 }
 

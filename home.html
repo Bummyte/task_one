@@ -46,7 +46,7 @@
         </section>
 
         <section class="backheading">
-            <article>
+            <div>
                 <div class="imgbg">
                     <img src="images/book.jpg" alt="image of a book as background">
                 </div>
@@ -54,7 +54,7 @@
                     <p><small>OCT 20</small></p>
                     <h1>5 Reason You Should Read More</h1>
                 </div>
-            </article>
+            </div>
         </section>
 
         <section class="authorsection" >
@@ -164,67 +164,80 @@
         </section>
 
         <section class="gallery-section">
-            <h1> Photo Gallery</h1>
-            <ul>
-                <li>All</li>
-                <li>Italy</li>
-                <li>Georgia</li>
-                <li>Cabs</li>
-            </ul>
+            <div class="heading-links">
+                <div class="line-text">
+                    <div class="my-line"></div> 
+                    <h1> Photo Gallery</h1>
+                    <div class="my-line"></div>
+                </div> 
+                
+                <ul>
+                    <li>All</li>
+                    <li>Italy</li>
+                    <li>Georgia</li>
+                    <li>Cabs</li>
+                </ul>
+            </div>
+            
        
 
             <div class="gallery-container">
-                <div class="photo-gallery">
-                    <a href="images/old cars.jpg"></a>
-                    <img src="images/old cars.jpg" alt="image of an old car" height="300px" width="200px">
-                </div>
+                <div class="gallery-images">
+                   <div class="photo-gallery">
+                        <!-- <a href="images/old cars.jpg"></a> -->
+                        <img src="images/old cars.jpg" alt="image of an old car">
+                    </div>
                 
-                <div class="photo-gallery">
-                    <a href="images/beach 2.jpg"></a>
-                    <img src="images/beach 2.jpg" alt="image of a beach" height="300px" width="200px">
+                    <div class="photo-gallery">
+                        <a href="images/beach 2.jpg"></a>
+                        <img src="images/beach 2.jpg" alt="image of a beach" >
+                    </div>
+                    <div class="photo-gallery">
+                        <!-- <a href="images/legs in water.jpg"></a> -->
+                        <img src="images/legs in water.jpg" alt="image of girl leg in water">
+                    </div> 
+                    <div class="photo-gallery">
+                        <!-- <a href="images/mountain 1.jpg"></a> -->
+                        <img src="images/mountain 1.jpg" alt="image of a mountain" >
+                    </div>
                 </div>
-                <div class="photo-gallery">
-                    <a href="images/legs in water.jpg"></a>
-                    <img src="images/legs in water.jpg" alt="image of girl leg in water" height="300px" width="200px">
-                </div>
-                <div class="photo-gallery">
-                    <a href="images/mountain 1.jpg"></a>
-                    <img src="images/mountain 1.jpg" alt="image of a mountain" height="300px" width="200px">
-                </div>
-                <div class="photo-gallery">
-                    <a href="images/girl reading.jpg"></a>
-                    <img src="images/girl reading.jpg" alt="image of a girl reading" height="300px" width="200px">
-                </div>
-                <div class="photo-gallery">
-                    <a href="images/person image.jpg"></a>
-                    <img src="images/person image.jpg" alt="image of a person" height="300px" width="200px">
-                </div>
-                <div class="photo-gallery">
-                    <a href="images/book and glasses.jpg"></a>
-                    <img src="images/book and glasses.jpg" alt="image of a eye glasses on a book" height="300px" width="200px">
-                </div>
-                <div class="photo-gallery">
-                    <a href="images/man walk.jpg"></a>
-                    <img src="images/man walk.jpg" alt="image of a man walking on the street" height="300px" width="200px">
-                </div>
+                <div class="gallery-images">
+                    <div class="photo-gallery">
+                        <!-- <a href="images/girl reading.jpg"></a> -->
+                        <img src="images/girl reading.jpg" alt="image of a girl reading">
+                    </div>
+                    <div class="photo-gallery">
+                        <!-- <a href="images/person image.jpg"></a> -->
+                        <img src="images/person image.jpg" alt="image of a person">
+                    </div>
+                    <div class="photo-gallery">
+                        <!-- <a href="images/book and glasses.jpg"></a> -->
+                        <img src="images/book and glasses.jpg" alt="image of a eye glasses on a book">
+                    </div>
+                    <div class="photo-gallery">
+                        <!-- <a href="images/man walk.jpg"></a> -->
+                        <img src="images/man walk.jpg" alt="image of a man walking on the street">
+                    </div>
+
+                </div>    
             </div>
+
+            <div class="testimony">
+                <div>
+                   <p> &quot; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sint suscipit, excepturi incidunt reiciendis dolore? &quot; &nbsp;</p>
+                    <div class="img-holder">
+                    <img src="images/potrait.jpg" alt="author's picture">
+                    <p>Zadle Smith, NY </p>
+                    </div> 
+                </div>
+
+            </div>
+
         </section>
 
-        <!-- <section class="note-container"> 
-            
-            <p> &quot; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sint suscipit, excepturi incidunt reiciendis dolore? &quot; &nbsp;</p>
-            
-            <div>
-                <ul></ul>
-                <img src="images/potrait.jpg" alt="author's picture">
-                <p>Zadle Smith, NY </p>
-
-            </div>
-        </section>-->
-        
+               
         <section class="bookcover-container">
             <div class="line-text">
-                
                 <div class="my-line"></div>
                 <h6>Most Popular</h6>
                 <div class="my-line"></div>
@@ -232,28 +245,67 @@
 
             <div class="bookcover-flex">
                 <div class="bookcover">
-                    <div><img src="images/book 1.jpg" alt="book 1"></div>
-                    <div class="bookcover-index">
-                        <h5> From Vintage Geometric to Minimalist Totes</h5>
-                        <small>Oct 20</small>
+                    <div>
+                        <div class="bkimg-bg">
+                            <img src="images/book 1.jpg" alt="book 1">
+                        </div>
+                        <div class="bookcover-index">
+                            <h5> From Vintage Geometric to Minimalist Totes</h5>
+                            <div class="index-flex">
+                                <small>Oct 20</small>
+                                <p> Zadle Smith</p>
+                            </div>
+                        </div> 
+                    </div>                    
+                </div>
+                <div class="bookcover">
+                    <div>
+                        <div class="bkimg-bg">
+                            <img src="images/book2 cover.jpg" alt="book 2">
+                        </div> 
+                        <div class="bookcover-index" >
+                            <h5> From Vintage Geometric to Minimalist Totes</h5>
+                            <div class="index-flex" >
+                                <small>Oct 20</small>
+                                <p> Zadle Smith</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="bookcover">
-                    <div><img src="images/book2 cover.jpg" alt="book 2"></div> 
-                    <div class="bookcover-index" >
-                        <h5> From Vintage Geometric to Minimalist Totes</h5>
-                        <small>Oct 20</small>
+                    <div>
+                        <div class="bkimg-bg">
+                            <img src="images/book3 cover.jpg" alt="book 3">
+                        </div>
+                        <div  class="bookcover-index">
+                            <h5> From Vintage Geometric to Minimalist Totes</h5>
+                            <div class="index-flex">
+                                <small>Oct 20</small>
+                                <p>Zadle Smith</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="bookcover">
-                    <div><img src="images/book3 cover.jpg" alt="book 3"></div>
-                    <div  class="bookcover-index">
-                        <h5> From Vintage Geometric to Minimalist Totes</h5>
-                        <small>Oct 20</small>
-                    </div>
+                    
                 </div>
                 
             </div>
+        </section>
+
+        <section class="updates" >
+            
+            <div>
+                <div update-holder>
+                    <h1>Stay in Touch With Updates</h1>
+                    <P><small>Lorem ipsum dolor sit amet consectetur.</small></P>
+                </div>
+                <div class="search-holder">
+                <input type="search" placeholder=" Email Address">
+                    <button>Sign Up</button>
+                </div>
+            </div>
+                
+        
+            
         </section>
         
     </body>
